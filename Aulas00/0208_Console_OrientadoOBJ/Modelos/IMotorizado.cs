@@ -6,14 +6,11 @@ using System.Threading.Tasks;
 
 namespace _0208_Console_OrientadoOBJ.Modelos
 {
-    class Veiculo
+    interface IMotorizado
     {
-        public String Placa { get; set; }
-        public String Modelo { get; set; }
-        public int Ano { get; set; }
-        
-        
-
+        int Velocidade { get; set; }
+        void Acelerar();
+        void Frenar();
 
 
     }

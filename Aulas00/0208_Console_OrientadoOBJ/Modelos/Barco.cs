@@ -6,20 +6,20 @@ using System.Threading.Tasks;
 
 namespace _0208_Console_OrientadoOBJ.Modelos
 {
-    class Moto : Veiculo, IMotorizado
+    class Barco : Veiculo, IMotorizado
 
     {
         public int Velocidade { get; set; }
         public void Acelerar()
         {
-            Console.WriteLine("Moto: Bomba na manopla do acelerador");
-            Velocidade += 5;
+            Console.WriteLine("Barco: Bomba no manete");
+            Velocidade -= 10;
         }
 
         public void Frenar()
         {
-            Console.WriteLine("Moto: Bomba no manopla do freio");
-            Velocidade -= 5;
+            Console.WriteLine("Barco: Bombando no manete");
+            Velocidade -= 10;
         }
     }
 }
