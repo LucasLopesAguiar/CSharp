@@ -24,5 +24,10 @@ namespace Aula0708_WPF
         {
             InitializeComponent();
         }
+
+        private void BtnIntervalinho_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Bora no intervalinho");
+        }
     }
 }
