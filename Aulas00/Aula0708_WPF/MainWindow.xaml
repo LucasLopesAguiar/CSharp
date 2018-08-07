@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Button x:Name="BtnIntervalinho" Content="Intervalinho" HorizontalAlignment="Left" Margin="318,200,0,0" VerticalAlignment="Top" Width="150
+                " Background="#FFBF1515"/>
+        <CheckBox x:Name="CheckIntervalinho" Content="Intervalinho é agora ?" HorizontalAlignment="Left" Margin="71,53,0,0" VerticalAlignment="Top"/>
+
     </Grid>
 </Window>
