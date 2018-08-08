@@ -5,32 +5,34 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF0708_Calculadora"
         mc:Ignorable="d"
-        Title="Calculadora" Height="582" Width="369">
-    <Grid x:Name="Cal">
+        Title="Calculadora" Height="620" Width="437">
+    <Grid x:Name="Cal" Margin="-9,0">
         <Grid.Background>
             <ImageBrush/>
         </Grid.Background>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="214*"/>
-            <ColumnDefinition Width="42*"/>
-            <ColumnDefinition Width="105*"/>
+            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="Soma" Content="+" HorizontalAlignment="Left" Margin="23,161,0,0" VerticalAlignment="Top" Width="71" Height="56" Grid.Column="2" FontFamily="Arial Black" FontSize="22"/>
-        <Button x:Name="Subtrair" Content="-" HorizontalAlignment="Left" Margin="23,239,0,0" VerticalAlignment="Top" Width="71" Height="56" Grid.Column="2" FontFamily="Arial Black" FontSize="22"/>
-        <Button x:Name="Divisão" Content="/" HorizontalAlignment="Left" Margin="23,319,0,0" VerticalAlignment="Top" Width="71" Height="56" Grid.Column="2" FontFamily="Arial Black" FontSize="22"/>
-        <Button x:Name="Multiplicação" Content="*" HorizontalAlignment="Left" Margin="23,399,0,0" VerticalAlignment="Top" Width="71" Height="56" Grid.Column="2" FontFamily="Arial Black" FontSize="22"/>
-        <Button x:Name="Resultado" Content="=" HorizontalAlignment="Left" Margin="23,471,0,0" VerticalAlignment="Top" Width="71" Height="56" Grid.Column="2" FontFamily="Arial Black" FontSize="22"/>
-        <Button x:Name="LimpaTela" Content="CE" HorizontalAlignment="Left" Margin="14,161,0,0" VerticalAlignment="Top" Width="251" Height="56" FontFamily="Arial Black" FontSize="22" Grid.ColumnSpan="3"/>
-        <Button x:Name="Numero1" Content="1" HorizontalAlignment="Left" Margin="14,239,0,0" VerticalAlignment="Top" Width="71" Height="56" FontFamily="Arial Black" FontSize="22"/>
-        <Button x:Name="Numero2" Content="2" HorizontalAlignment="Left" Margin="104,239,0,0" VerticalAlignment="Top" Width="71" Height="56" FontFamily="Arial Black" FontSize="22" RenderTransformOrigin="0.769,0.529"/>
-        <Button x:Name="Numero3" Content="3" HorizontalAlignment="Left" Margin="194,239,0,0" VerticalAlignment="Top" Width="71" Height="56" FontFamily="Arial Black" FontSize="22" Grid.ColumnSpan="3"/>
-        <Button x:Name="Numero4" Content="4" HorizontalAlignment="Left" Margin="14,319,0,0" VerticalAlignment="Top" Width="71" Height="56" FontFamily="Arial Black" FontSize="22"/>
-        <Button x:Name="Numero5" Content="5" HorizontalAlignment="Left" Margin="104,319,0,0" VerticalAlignment="Top" Width="71" Height="56" FontFamily="Arial Black" FontSize="22" RenderTransformOrigin="0.769,0.529"/>
-        <Button x:Name="Numero6" Content="6" HorizontalAlignment="Left" Margin="194,319,0,0" VerticalAlignment="Top" Width="71" Height="56" FontFamily="Arial Black" FontSize="22" Grid.ColumnSpan="3"/>
-        <Button x:Name="Numero7" Content="7" HorizontalAlignment="Left" Margin="14,399,0,0" VerticalAlignment="Top" Width="71" Height="56" FontFamily="Arial Black" FontSize="22"/>
-        <Button x:Name="Numero8" Content="8" HorizontalAlignment="Left" Margin="104,399,0,0" VerticalAlignment="Top" Width="71" Height="56" FontFamily="Arial Black" FontSize="22" RenderTransformOrigin="0.769,0.529"/>
-        <Button x:Name="Numero9" Content="9" HorizontalAlignment="Left" Margin="194,399,0,0" VerticalAlignment="Top" Width="71" Height="56" FontFamily="Arial Black" FontSize="22" Grid.ColumnSpan="3"/>
-        <Button x:Name="RaizQuadrada" Content="√" HorizontalAlignment="Left" Margin="14,471,0,0" VerticalAlignment="Top" Width="251" Height="56" FontFamily="Arial Black" FontSize="22" Grid.ColumnSpan="3"/>
-        <Label x:Name="Visor" Content="Label" HorizontalAlignment="Left" Margin="14,29,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.789,-0.34" Grid.ColumnSpan="3" Height="108" Width="336" FontFamily="Arial Black" FontSize="18"/>
+        <Button x:Name="Soma" Content="+" HorizontalAlignment="Left" Margin="325,165,0,0" VerticalAlignment="Top" Width="71" Height="56" FontFamily="Arial Black" FontSize="22"/>
+        <Button x:Name="Subtrair" Content="-" HorizontalAlignment="Left" Margin="325,243,0,0" VerticalAlignment="Top" Width="71" Height="56" FontFamily="Arial Black" FontSize="22"/>
+        <Button x:Name="Divisão" Content="/" HorizontalAlignment="Left" Margin="325,323,0,0" VerticalAlignment="Top" Width="71" Height="56" FontFamily="Arial Black" FontSize="22"/>
+        <Button x:Name="Multiplicação" Content="*" HorizontalAlignment="Left" Margin="325,403,0,0" VerticalAlignment="Top" Width="71" Height="56" FontFamily="Arial Black" FontSize="22"/>
+        <Button x:Name="Resultado" Content="=" HorizontalAlignment="Left" Margin="325,475,0,0" VerticalAlignment="Top" Width="71" Height="56" FontFamily="Arial Black" FontSize="22"/>
+        <Button x:Name="LimpaCampo" Content="CE" HorizontalAlignment="Left" Margin="56,165,0,0" VerticalAlignment="Top" Width="71" Height="56" FontFamily="Arial Black" FontSize="22"/>
+        <Button x:Name="Numero1" Content="1" HorizontalAlignment="Left" Margin="56,403,0,0" VerticalAlignment="Top" Width="71" Height="56" FontFamily="Arial Black" FontSize="22"/>
+        <Button x:Name="Numero2" Content="2" HorizontalAlignment="Left" Margin="146,403,0,0" VerticalAlignment="Top" Width="71" Height="56" FontFamily="Arial Black" FontSize="22" RenderTransformOrigin="0.769,0.529"/>
+        <Button x:Name="Numero3" Content="3" HorizontalAlignment="Left" Margin="236,403,0,0" VerticalAlignment="Top" Width="71" Height="56" FontFamily="Arial Black" FontSize="22"/>
+        <Button x:Name="Numero4" Content="4" HorizontalAlignment="Left" Margin="56,323,0,0" VerticalAlignment="Top" Width="71" Height="56" FontFamily="Arial Black" FontSize="22"/>
+        <Button x:Name="Numero5" Content="5" HorizontalAlignment="Left" Margin="146,323,0,0" VerticalAlignment="Top" Width="71" Height="56" FontFamily="Arial Black" FontSize="22" RenderTransformOrigin="0.769,0.529"/>
+        <Button x:Name="Numero6" Content="6" HorizontalAlignment="Left" Margin="236,323,0,0" VerticalAlignment="Top" Width="71" Height="56" FontFamily="Arial Black" FontSize="22"/>
+        <Button x:Name="Numero7" Content="7" HorizontalAlignment="Left" Margin="56,243,0,0" VerticalAlignment="Top" Width="71" Height="56" FontFamily="Arial Black" FontSize="22"/>
+        <Button x:Name="Numero8" Content="8" HorizontalAlignment="Left" Margin="146,243,0,0" VerticalAlignment="Top" Width="71" Height="56" FontFamily="Arial Black" FontSize="22" RenderTransformOrigin="0.769,0.529"/>
+        <Button x:Name="Numero9" Content="9" HorizontalAlignment="Left" Margin="236,243,0,0" VerticalAlignment="Top" Width="71" Height="56" FontFamily="Arial Black" FontSize="22"/>
+        <Button x:Name="Numero0" Content="0" HorizontalAlignment="Left" Margin="146,475,0,0" VerticalAlignment="Top" Width="71" Height="56" FontFamily="Arial Black" FontSize="22" RenderTransformOrigin="0.769,0.529"/>
+        <Button x:Name="RaizQuadrada" Content="√" HorizontalAlignment="Left" Margin="56,475,0,0" VerticalAlignment="Top" Width="71" Height="56" FontFamily="Arial Black" FontSize="22"/>
+        <Label x:Name="Visor" Content="0" HorizontalAlignment="Left" Margin="56,31,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.789,-0.34" Height="108" Width="344" FontFamily="Arial Black" FontSize="24"/>
+        <Button x:Name="Pontual" Content="," HorizontalAlignment="Left" Margin="236,475,0,0" VerticalAlignment="Top" Width="71" Height="56" FontFamily="Arial Black" FontSize="22"/>
+        <Button x:Name="LimpaTela" Content="C" HorizontalAlignment="Left" Margin="146,165,0,0" VerticalAlignment="Top" Width="71" Height="56" FontFamily="Arial Black" FontSize="22"/>
+        <Button x:Name="Apagar" Content="%" HorizontalAlignment="Left" Margin="236,165,0,0" VerticalAlignment="Top" Width="71" Height="56" FontFamily="Arial Black" FontSize="22"/>
     </Grid>
 </Window>
