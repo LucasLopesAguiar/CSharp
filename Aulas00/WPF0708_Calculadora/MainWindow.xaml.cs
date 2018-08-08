@@ -20,6 +20,22 @@ namespace WPF0708_Calculadora
     /// </summary>
     public partial class MainWindow : Window
     {
+        //Toda vez que selecionar algo, vai validar se é operador para limpar a tela
+        bool clica_operacao = false;
+
+        //Função que válida se foi digitado numero ou operador
+        public void ler_num(int Num_Lido)
+        {
+            if (clica_operacao == false)
+
+                Visor.Text += Num_Lido;
+
+            else Visor.Text = Num_Lido.ToString(); 
+
+
+        }
+        
+
         public MainWindow()
         {
             InitializeComponent();
