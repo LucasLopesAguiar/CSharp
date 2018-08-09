@@ -38,7 +38,7 @@ namespace WPF0708_Calculadora
             else Visor.Text = Num_Lido.ToString();
 
             //Depois de uma operação ele valida e deixa aparecer mais numeros
-            clica_operacao = false;
+           clica_operacao = false;
 
 
         }
@@ -170,6 +170,7 @@ namespace WPF0708_Calculadora
 
         private void LimpaCampo_Click(object sender, RoutedEventArgs e)
         {
+
             Visor.Text = "";
         }
 
